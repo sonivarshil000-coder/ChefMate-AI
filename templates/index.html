@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChefMate AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+
+            🍽️ ChefMate AI
+
+        </div>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Recipes</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+
+        </ul>
+
+    </nav>
+    <section class="hero">
+    
+        <div class="left">
+    
+            <h1>
+                Cook Smarter with
+                <span>ChefMate AI</span>
+            </h1>
+    
+            <p>
+                Discover the perfect recipe using AI.
+                Get personalized YouTube recipe recommendations
+                in seconds.
+            </p>
+    
+            <div class="buttons">
+    
+                <button class="btn1">Get Started</button>
+    
+                <button class="btn2">Watch Demo</button>
+    
+            </div>
+    
+        </div>
+    
+        <div class="right">
+    
+            <img src="{{ url_for('static', filename='images/robot-chef.png') }}" alt="Robot Chef">
+    
+        </div>
+    
+    </section>
+    <!-- ================= FEATURES ================= -->
+    
+    <section class="features">
+    
+        <h2>Why Choose ChefMate AI?</h2>
+    
+        <div class="feature-container">
+    
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h3>AI Powered</h3>
+                <p>Smart AI understands your food preferences and recommends the perfect recipes.</p>
+            </div>
+    
+            <div class="card">
+                <div class="icon">🎥</div>
+                <h3>YouTube Recipes</h3>
+                <p>Find the best YouTube cooking videos without wasting time searching.</p>
+            </div>
+    
+            <div class="card">
+                <div class="icon">❤️</div>
+                <h3>Healthy Choices</h3>
+                <p>Get healthy meal recommendations based on your lifestyle and goals.</p>
+            </div>
+    
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Fast Results</h3>
+                <p>Get personalized recipe suggestions within seconds using AI.</p>
+            </div>
+    
+        </div>
+    
+    </section>
+    <!-- ================= HOW IT WORKS ================= -->
+    
+    <section class="how-it-works">
+    
+        <h2>How ChefMate AI Works</h2>
+    
+        <p class="subtitle">
+            Get your perfect recipe in just three simple steps.
+        </p>
+    
+        <div class="steps">
+    
+            <div class="step">
+    
+                <div class="number">1</div>
+    
+                <h3>Answer Questions</h3>
+    
+                <p>
+                    Tell us who you're cooking for, meal type,
+                    cuisine and food preference.
+                </p>
+    
+            </div>
+    
+            <div class="arrow">➜</div>
+    
+            <div class="step">
+    
+                <div class="number">2</div>
+    
+                <h3>AI Finds the Best Match</h3>
+    
+                <p>
+                    ChefMate AI analyzes your answers and searches
+                    for the perfect recipe.
+                </p>
+    
+            </div>
+    
+            <div class="arrow">➜</div>
+    
+            <div class="step">
+    
+                <div class="number">3</div>
+    
+                <h3>Cook & Enjoy</h3>
+    
+                <p>
+                    Watch the best YouTube recipe,
+                    follow the steps and enjoy your meal.
+                </p>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <!-- ================= WHY CHOOSE ================= -->
+    
+    <section class="why">
+    
+        <h2>Why You'll Love ChefMate AI ❤️</h2>
+    
+        <p class="why-subtitle">
+            Cooking becomes easier, faster and smarter with AI.
+        </p>
+    
+        <div class="why-container">
+    
+            <div class="why-card">
+    
+                <div class="why-icon">🤖</div>
+    
+                <h3>Understands Your Taste</h3>
+    
+                <p>
+                    ChefMate AI learns what you like and recommends recipes that match your preferences.
+                </p>
+    
+            </div>
+    
+            <div class="why-card">
+    
+                <div class="why-icon">🎥</div>
+    
+                <h3>Best YouTube Videos</h3>
+    
+                <p>
+                    No more endless searching. We find the most useful recipe videos for you.
+                </p>
+    
+            </div>
+    
+            <div class="why-card">
+    
+                <div class="why-icon">🥗</div>
+    
+                <h3>Personalized Meals</h3>
+    
+                <p>
+                    Whether you're alone or with family, get recipes made just for your needs.
+                </p>
+    
+            </div>
+    
+            <div class="why-card">
+    
+                <div class="why-icon">⚡</div>
+    
+                <h3>Save Your Time</h3>
+    
+                <p>
+                    Spend less time searching and more time cooking delicious food.
+                </p>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+</body>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>ChefMate AI 🍳</h2>
+
+    <p>
+        Your Personal AI Cooking Assistant
+    </p>
+
+    <p class="copyright">
+
+        © 2026 ChefMate AI. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+</html>

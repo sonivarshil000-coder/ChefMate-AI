@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}ChefMate AI{% endblock %}</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Extra CSS -->
+    {% block extra_css %}{% endblock %}
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+
+            🍳 ChefMate AI
+
+        </div>
+
+        <ul>
+
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+
+            <li><a href="#">Recipes</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Page Content -->
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>ChefMate AI 🍳</h2>
+
+        <p>Your Personal AI Cooking Assistant</p>
+
+        <p class="copyright">
+
+            © 2026 ChefMate AI. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
