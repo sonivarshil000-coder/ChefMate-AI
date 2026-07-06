@@ -9,17 +9,102 @@
 
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
 
-    <h1 style="text-align:center;margin-top:100px;">
+    <div class="sidebar">
 
-        🎉 Welcome to ChefMate AI Dashboard
+        <h2>🧑‍🍳ChefMate AI</h2>
 
-    </h1>
+        <ul>
+
+            <li>🏠 Dashboard</li>
+
+            <li>🍽 Find Recipe</li>
+
+            <li>❤️ Favorites</li>
+
+            <li>📜 History</li>
+
+            <li>⚙ Settings</li>
+
+            <li><a href="/logout">🚪 Logout</a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <h1>
+
+            Hello,
+
+                    {{ session['user'] }}
+
+            👋
+
+        </h1>
+
+        <p>
+
+            What would you like to cook today?
+
+        </p>
+
+        <a href="{{ url_for('question1') }}" class="card">
+
+            <div class="card">
+
+                🍽
+
+                <h2>Find Recipe</h2>
+
+                <p>
+
+                    Start AI Recipe Search
+
+                </p>
+
+            </a>
+
+            <div class="card">
+
+                ❤️
+
+                <h2>Favorites</h2>
+
+                <p>
+
+                    View Saved Recipes
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                📜
+
+                <h2>History</h2>
+
+                <p>
+
+                    Recently Viewed Recipes
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 
