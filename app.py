@@ -34,7 +34,7 @@ def login():
 
             session["user"] = user[1]
 
-            return redirect(url_for("dashboard"))
+            return redirect(url_for("ai_home"))
 
         else:
 
@@ -80,6 +80,18 @@ def logout():
     session.pop("user",None)
 
     return redirect(url_for("login"))
+
+@app.route("/question1")
+def question1():
+
+    return render_template("question1.html")
+@app.route("/ai-home")
+def ai_home():
+
+    if "user" not in session:
+        return redirect(url_for("login"))
+
+    return render_template("ai_home.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChefMate AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ai_home.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>🍳 ChefMate AI</h1>
+
+            <div class="user">
+
+                👤 {{ session['user'] }}
+
+            </div>
+
+        </header>
+
+        <section class="hero">
+
+            <h2>
+
+                Hi {{ session['user'] }} 👋
+
+            </h2>
+
+            <p>
+                <div class="search-box">
+                
+                    <input type="text" placeholder="Ask ChefMate AI...">
+                
+                    <button>
+                
+                        🔍 Find Recipe
+                
+                    </button>
+                
+                </div>
+                
+                <div class="suggestions">
+                
+                    <h3>✨ Quick Suggestions</h3>
+                
+                    <div class="chips">
+                
+                        <div class="chip">🥗 Healthy Breakfast</div>
+                
+                        <div class="chip">🍕 Pizza</div>
+                
+                        <div class="chip">🍝 Pasta</div>
+                
+                        <div class="chip">🍗 Chicken Curry</div>
+                
+                        <div class="chip">🥘 Gujarati Food</div>
+                
+                    </div>
+                
+                </div>
+
+                What would you like to cook today?
+
+            </p>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

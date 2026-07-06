@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChefMate AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/question.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍳 ChefMate AI</h1>
+
+        <h2>Who are you cooking for?</h2>
+
+        <form action="/question2" method="POST">
+
+            <label class="option">
+
+                <input type="radio" name="people" value="Alone" required>
+
+                👤 Alone
+
+            </label>
+
+            <label class="option">
+
+                <input type="radio" name="people" value="Couple">
+
+                ❤️ Couple
+
+            </label>
+
+            <label class="option">
+
+                <input type="radio" name="people" value="Family">
+
+                👨‍👩‍👧 Family
+
+            </label>
+
+            <button type="submit">
+
+                Continue →
+
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
