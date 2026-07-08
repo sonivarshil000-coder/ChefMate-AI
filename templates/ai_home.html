@@ -4,80 +4,88 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ChefMate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/ai_home.css') }}">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+
 </head>
 
 <body>
 
+    <nav>
+
+        <div class="logo">
+
+            👨‍🍳 ChefMate AI
+
+        </div>
+
+        <div class="user">
+
+            👤 {{ session['user'] }}
+
+        </div>
+
+    </nav>
+
     <div class="container">
 
-        <header>
+        <div class="hero">
 
-            <h1>🍳 ChefMate AI</h1>
+            <h1>
 
-            <div class="user">
+                Welcome Back, {{ session['user'] }} 👋
 
-                👤 {{ session['user'] }}
-
-            </div>
-
-        </header>
-
-        <section class="hero">
-
-            <h2>
-
-                Hi {{ session['user'] }} 👋
-
-            </h2>
+            </h1>
 
             <p>
-                <div class="search-box">
-                
-                    <input type="text" placeholder="Ask ChefMate AI...">
-                
-                    <button>
-                
-                        🔍 Find Recipe
-                
-                    </button>
-                
-                </div>
-                
-                <div class="suggestions">
-                
-                    <h3>✨ Quick Suggestions</h3>
-                
-                    <div class="chips">
-                
-                        <div class="chip">🥗 Healthy Breakfast</div>
-                
-                        <div class="chip">🍕 Pizza</div>
-                
-                        <div class="chip">🍝 Pasta</div>
-                
-                        <div class="chip">🍗 Chicken Curry</div>
-                
-                        <div class="chip">🥘 Gujarati Food</div>
-                
-                    </div>
-                
-                </div>
 
-                What would you like to cook today?
+                Your Personal AI Kitchen Assistant
 
             </p>
 
-        </section>
+        </div>
+
+        <form class="search-box">
+
+            <input type="text" placeholder="What would you like to cook today?">
+
+            <button type="submit">
+
+                Find Recipe
+
+            </button>
+
+        </form>
+
+        <div class="quick">
+
+            <h2>Quick Suggestions</h2>
+
+            <div class="chips">
+
+                <button class="chip">🥗 Healthy Breakfast</button>
+
+                <button class="chip">🍕 Pizza</button>
+
+                <button class="chip">🍝 Pasta</button>
+
+                <button class="chip">🥘 Indian Food</button>
+
+                <button class="chip">🥗 Weight Loss Meal</button>
+
+                <button class="chip">🍚 Gujarati Food</button>
+
+            </div>
+
+        </div>
 
     </div>
 
