@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Budget</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/question1.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>👨‍🍳 ChefMate AI</h1>
+
+        <h2>Select Your Budget</h2>
+
+        <form action="/budget" method="POST">
+
+            <label class="option">
+                <input type="radio" name="budget" value="Under ₹100" required>
+                💰 Under ₹100
+            </label>
+
+            <label class="option">
+                <input type="radio" name="budget" value="₹100 - ₹300">
+                💵 ₹100 - ₹300
+            </label>
+
+            <label class="option">
+                <input type="radio" name="budget" value="₹300 - ₹500">
+                💸 ₹300 - ₹500
+            </label>
+
+            <label class="option">
+                <input type="radio" name="budget" value="Above ₹500">
+                💎 Above ₹500
+            </label>
+
+            <button type="submit">
+
+                Continue →
+
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

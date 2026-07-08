@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Type</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/question1.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>👨‍🍳 ChefMate AI</h1>
+
+        <h2>What type of recipe do you want?</h2>
+
+        <form action="/food-type" method="POST">
+
+            <label class="option">
+
+                <input type="radio" name="food_type" value="Vegetarian" required>
+
+                🥗 Vegetarian
+
+            </label>
+
+            <label class="option">
+
+                <input type="radio" name="food_type" value="Non-Vegetarian">
+
+                🍗 Non-Vegetarian
+
+            </label>
+
+            <button type="submit">
+
+                Continue →
+
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

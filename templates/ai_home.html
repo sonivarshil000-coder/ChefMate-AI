@@ -53,18 +53,17 @@
 
         </div>
 
-        <form class="search-box">
-
-            <input type="text" placeholder="What would you like to cook today?">
-
+        <form action="{{ url_for('chat') }}" method="POST" class="search-box">
+        
+            <input type="text" name="message" placeholder="What would you like to cook today?" required>
+        
             <button type="submit">
-
+        
                 Find Recipe
-
+        
             </button>
-
+        
         </form>
-
         <div class="quick">
 
             <h2>Quick Suggestions</h2>

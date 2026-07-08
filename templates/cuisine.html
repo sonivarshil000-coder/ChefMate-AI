@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Select Cuisine</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/question1.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>👨‍🍳 ChefMate AI</h1>
+
+        <h2>Choose Your Preferred Cuisine</h2>
+
+        <form action="/cuisine" method="POST">
+
+            <label class="option">
+                <input type="radio" name="cuisine" value="Indian" required>
+                🇮🇳 Indian
+            </label>
+
+            <label class="option">
+                <input type="radio" name="cuisine" value="Italian">
+                🍝 Italian
+            </label>
+
+            <label class="option">
+                <input type="radio" name="cuisine" value="Chinese">
+                🥢 Chinese
+            </label>
+
+            <label class="option">
+                <input type="radio" name="cuisine" value="Mexican">
+                🌮 Mexican
+            </label>
+
+            <button type="submit">
+
+                Continue →
+
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

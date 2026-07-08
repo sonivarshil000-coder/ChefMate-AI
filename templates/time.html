@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cooking Time</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/question1.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>👨‍🍳 ChefMate AI</h1>
+
+        <h2>How much time do you have?</h2>
+
+        <form action="/time" method="POST">
+
+            <label class="option">
+
+                <input type="radio" name="time" value="15 Minutes" required>
+
+                ⏱️ 15 Minutes
+
+            </label>
+
+            <label class="option">
+
+                <input type="radio" name="time" value="30 Minutes">
+
+                ⏳ 30 Minutes
+
+            </label>
+
+            <label class="option">
+
+                <input type="radio" name="time" value="45 Minutes">
+
+                🕒 45 Minutes
+
+            </label>
+
+            <label class="option">
+
+                <input type="radio" name="time" value="1 Hour or More">
+
+                🕐 1 Hour or More
+
+            </label>
+
+            <button type="submit">
+
+                Find Recipe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
